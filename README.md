@@ -1,4 +1,4 @@
-# Template for new Ruby on Rails Projects with Docker
+# Template for New Ruby on Rails Projects with Docker
 
 This is a template for new Ruby on Rails projects configured with Docker.
 
@@ -18,7 +18,7 @@ This template also includes basic Git configuration, allowing you to start versi
 
 5. Edit the `config/database.yml` file to connect to the Docker Postgres database.
 
-6. Run `docker-compose run app rake db:create` to create the database. Attention: If you have problems with gem not installed, run `docker-compose build` again.
+6. Run `docker-compose run app rake db:create` to create the database. If you have problems with gem not installed, run `docker-compose build` and try again.
 
 7. To start the Rails server, run `docker-compose up`.
 
