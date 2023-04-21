@@ -8,17 +8,17 @@ This template also includes basic Git configuration, allowing you to start versi
 
 ## How to Use
 
-1. Clone this repository to your local machine.
+1. Clone this repository to your local machine. `git clone git@github.com:gilderlan/rails-compose.git my_project_name`.
 
 2. Install [Docker](https://docs.docker.com/get-docker/) on your machine.
 
 3. In the root folder of the project, run the command `docker-compose build` to build the Docker image.
 
-4. Then, run `docker-compose run web rails new . --force --no-deps --database=postgresql` to create a new Rails application.
+4. Then, run `docker-compose run app rails new . --force --no-deps --database=postgresql` to create a new Rails application.
 
 5. Edit the `config/database.yml` file to connect to the Docker Postgres database.
 
-6. Run `docker-compose run web rake db:create` to create the database.
+6. Run `docker-compose run app rake db:create` to create the database. Attention: If you have problems with gem not installed, run `docker-compose build` again.
 
 7. To start the Rails server, run `docker-compose up`.
 
