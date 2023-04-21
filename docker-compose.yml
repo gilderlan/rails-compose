@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: password
+  app:
+    build: .
+    stdin_open: true
+    env_file:
+      - .env
+    tty: true
+    volumes:
+      - .:/app
+    ports:
+      - "${PUBLIC_PORT}:3000"
+    depends_on:
+      - db
