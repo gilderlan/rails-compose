@@ -1,4 +1,4 @@
-# Template for New Ruby on Rails Projects with Docker
+# Template for new Ruby on Rails Projects with Docker
 
 This is a template for new Ruby on Rails projects configured with Docker.
 
