@@ -1,10 +1,8 @@
-# Template for New Ruby on Rails Projects with Docker
+# Docker template to create new Rails projects
 
 This is a template for new Ruby on Rails projects configured with Docker.
 
 With Docker, you can isolate your development environment from the rest of your system, allowing you to run your Ruby on Rails project without worrying about dependency issues or version conflicts.
-
-This template also includes basic Git configuration, allowing you to start versioning your code from the beginning.
 
 ## How to Use
 
