@@ -12,7 +12,7 @@ With Docker, you can isolate your development environment from the rest of your 
 
 3. In the root folder of the project, run the command `docker-compose build` to build the Docker image.
 
-4. Then, run `docker-compose run app rails new . --force --no-deps --database=postgresql` to create a new Rails application.
+4. Then, run `docker-compose run app rails new . --force --no-deps --skip-docker --database=postgresql` to create a new Rails application.
 
 5. Edit the `config/database.yml` file to connect to the Docker Postgres database.
 
