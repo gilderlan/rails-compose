@@ -13,7 +13,11 @@ services:
     tty: true
     volumes:
       - .:/app
+      - bundle_cache:/usr/local/bundle
     ports:
       - "${PUBLIC_PORT}:3000"
     depends_on:
       - db
+
+volumes:
+  bundle_cache:
