@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM ruby:3.2.9
+FROM ruby:3.4.2
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client libyaml-dev
 WORKDIR /app
 COPY Gemfile /app/Gemfile
